@@ -24,11 +24,11 @@ Run:
 ## Installing the Chart
 
 To install the chart with the release name my-application in namespace test:
+    
     cd k8s-argocd/
     helm package .
     curl --data-binary "@mychart-0.1.0.tgz" http://localhost:8080/api/charts
     helm cm-push k8s-argocd/ chartmuseum
-
     helm repo add chartmuseum http://localhost:8080
     helm repo update
     helm install my-application chartmuseum/mychart --namespace test
