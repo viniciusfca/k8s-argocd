@@ -1,0 +1,9 @@
+apiVersion: v2
+name: base-k8s-app
+description: Generic helm chart for all kind of applications
+
+type: application
+
+# Helm chart Version
+
+version: 0.1.3
